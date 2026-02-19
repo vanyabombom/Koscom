@@ -40,7 +40,6 @@ ul {
     list-style: none;
 }
 
-/* ===== HEADER / NAVIGATION ===== */
 .header {
     position: fixed;
     top: 0;
@@ -504,7 +503,13 @@ ul {
 .vm__icon {
     width: 48px;
     height: 48px;
-    background: #1a56db;
+    /* Linear Gradient */
+    /* Linear Gradient */
+    /* Linear Gradient */
+    background: linear-gradient(282.32deg, #0F1F64 -8.95%, #3A91FB 118.24%);
+
+
+    /* Fallback for older browsers */
     /* Blue color from screenshot icons */
     border-radius: 8px;
     display: flex;
@@ -1654,15 +1659,16 @@ html.lenis body {
     }
 
     .footer {
-        padding: 60px 0 250px;
+        padding: 60px 0 30vw;
         /* Adjusted mobile padding */
     }
 
     .footer__watermark {
-        font-size: 200px;
-        /* Slightly smaller for mobile */
+        font-size: 22vw;
+        /* Safer size for mobile */
         bottom: 0;
-        letter-spacing: 10px;
+        letter-spacing: 1vw;
+        /* Responsive spacing */
     }
 
     .footer__container {
