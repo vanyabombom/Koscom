@@ -15,6 +15,7 @@ requestAnimationFrame(raf)
 
 function initAccordion(itemSelector, headerSelector) {
     const items = document.querySelectorAll(itemSelector);
+    const wwdMainImg = document.getElementById('wwd-main-img');
 
     items.forEach(item => {
         const header = item.querySelector(headerSelector);
@@ -30,6 +31,18 @@ function initAccordion(itemSelector, headerSelector) {
 
             if (!isActive) {
                 item.classList.add('active');
+
+                // If this is a WWD item, swap the image
+                if (item.classList.contains('wwd__item') && wwdMainImg) {
+                    const newImgSrc = item.getAttribute('data-img');
+                    if (newImgSrc) {
+                        wwdMainImg.style.opacity = '0.5';
+                        setTimeout(() => {
+                            wwdMainImg.src = newImgSrc;
+                            wwdMainImg.style.opacity = '1';
+                        }, 150);
+                    }
+                }
             }
         });
     });
@@ -63,21 +76,25 @@ function initFdkSlider() {
     let totalPages = Math.ceil(cards.length / cardsPerView);
 
     function updateSlider() {
-        cardsPerView = window.innerWidth > 900 ? 3 : 1;
-        totalPages = Math.ceil(cards.length / cardsPerView);
+        if (window.innerWidth <= 900) {
+            track.style.transform = '';
+            dotsContainer.style.display = 'none';
+            return;
+        } else {
+            dotsContainer.style.display = 'flex';
+        }
 
+        cardsPerView = 3;
+        totalPages = Math.ceil(cards.length / cardsPerView);
 
         if (currentIndex >= totalPages) currentIndex = totalPages - 1;
         if (currentIndex < 0) currentIndex = 0;
 
-
         const targetCard = cards[currentIndex * cardsPerView];
         if (targetCard) {
-
             const offset = targetCard.offsetLeft;
             track.style.transform = `translateX(-${offset}px)`;
         }
-
 
         renderDots();
     }

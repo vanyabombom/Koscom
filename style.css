@@ -2337,14 +2337,49 @@ html.lenis body {
 }
 
 @media (max-width: 900px) {
-    .fdk__card {
-        flex: 0 0 100%;
+    .fdk__container {
+        padding: 0;
     }
 
     .fdk__top {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        padding: 0 20px;
+    }
+
+    .fdk__controls {
+        display: none;
+    }
+
+    .fdk__slider {
+        margin: 0;
+        padding: 0;
+    }
+
+    .fdk__grid {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 10px 20px 30px 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 16px;
+        scroll-padding-left: 20px;
+    }
+
+    .fdk__grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .fdk__grid::after {
+        content: '';
+        flex: 0 0 1px;
+    }
+
+    .fdk__card {
+        flex: 0 0 85%;
+        max-width: 320px;
+        scroll-snap-align: start;
     }
 }
 
