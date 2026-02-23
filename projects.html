@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="script.js"></script>
+    <link rel="icon" href="assets/icon.svg">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 
         <nav class="header__nav" id="nav">
             <a href="about-us.html" class="header__nav-link">About us</a>
-            <a href="#services" class="header__nav-link">Services</a>
+            <a href="services.html" class="header__nav-link">Services</a>
             <a href="projects.html" class="header__nav-link active">Projects</a>
 
             <div class="header__dropdown">
@@ -32,13 +33,12 @@
                     <span class="header__dropdown-arrow"></span>
                 </button>
                 <div class="header__dropdown-menu">
-                    <a href="#open-positions">Open Positions</a>
-                    <a href="#internships">Internships</a>
-                    <a href="#culture">Our Culture</a>
+                    <a href="careers-work-with-us.html">Work with Us</a>
+                    <a href="careers-subcontractors.html">Subcontractors</a>
                 </div>
             </div>
 
-            <a href="#contact" class="header__nav-link">Contact us</a>
+            <a href="contact-us.html" class="header__nav-link">Contact us</a>
         </nav>
 
         <button class="header__burger" id="burger" aria-label="Toggle menu">
@@ -48,7 +48,7 @@
         </button>
     </header>
 
-    <!-- ===== HERO ===== -->
+
     <section class="hero" id="hero">
         <div class="hero__video-wrap">
             <img src="assets/project-hero.jpg" alt="Projects">
@@ -61,6 +61,13 @@
             </h1>
         </div>
 
+    </section>
+
+
+    <div class="hero-bottom-curve">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path fill="#0d1b5e" d="M0,80 L0,0 L580,0 C640,0 660,75 720,75 C780,75 800,0 860,0 L1440,0 L1440,80 Z" />
+        </svg>
         <a href="javascript:void(0)" class="hero__scroll" style="cursor: default;">
             <div class="hero__scroll-circle">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
@@ -70,9 +77,9 @@
                 </svg>
             </div>
         </a>
-    </section>
+    </div>
 
-    <!-- ===== PROJECT PORTFOLIO ===== -->
+
     <section class="about-blocks">
         <div class="about-block">
             <div class="about-block__container">
@@ -101,7 +108,7 @@
         </div>
     </section>
 
-    <!-- ===== PROJECT IMAGE ===== -->
+
     <section style="background: var(--white); padding: 0 0 100px;">
         <div style="max-width: 1240px; margin: 0 auto; padding: 0 40px;">
             <img src="assets/project-pic1.jpg" alt="Koscom Project"
@@ -109,10 +116,10 @@
         </div>
     </section>
 
-    <!-- ===== PORTFOLIO ITEMS ===== -->
+
     <section class="portfolio">
         <div class="portfolio__container">
-            <!-- Amazon -->
+
             <div class="portfolio-item">
                 <h3 class="portfolio-item__title">Amazon key for business</h3>
                 <div class="portfolio-item__row">
@@ -149,7 +156,7 @@
                 </div>
             </div>
 
-            <!-- Xfinity -->
+
             <div class="portfolio-item">
                 <h3 class="portfolio-item__title">Xfinity Comcast</h3>
                 <div class="portfolio-item__row">
@@ -186,7 +193,7 @@
                 </div>
             </div>
 
-            <!-- Spectrum -->
+
             <div class="portfolio-item">
                 <h3 class="portfolio-item__title">Spectrum</h3>
                 <div class="portfolio-item__row">
@@ -228,13 +235,6 @@
         <div class="carousel-wrapper">
             <div class="carousel-track" id="track">
 
-                <!-- === SET 1 === -->
-                <div class="logo-card">
-                    <img src="https://placehold.co/200x60/ffffff/0d1b5e?text=Partner+1" alt="Partner 1">
-                </div>
-                <div class="logo-card">
-                    <img src="https://placehold.co/200x60/ffffff/0d1b5e?text=Partner+2" alt="Partner 2">
-                </div>
                 <div class="logo-card">
                     <img src="https://placehold.co/200x60/ffffff/0d1b5e?text=Partner+3" alt="Partner 3">
                 </div>
@@ -260,7 +260,7 @@
                     <img src="https://placehold.co/200x60/ffffff/0d1b5e?text=Partner+10" alt="Partner 10">
                 </div>
 
-                <!-- === SET 2 (exact duplicate) === -->
+
                 <div class="logo-card">
                     <img src="https://placehold.co/200x60/ffffff/0d1b5e?text=Partner+1" alt="Partner 1">
                 </div>
@@ -296,13 +296,37 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+
+    <section class="connect connect--white" id="connect">
+        <div class="connect__bg-circle connect__bg-circle--1"></div>
+        <div class="connect__bg-circle connect__bg-circle--2"></div>
+        <div class="connect__bg-circle connect__bg-circle--3"></div>
+
+        <div class="connect__container">
+            <div class="connect__content">
+                <h2 class="connect__heading">Connect with Us</h2>
+                <p class="connect__text">Have a project, outage, or technical question—or looking to join our field
+                    crews? Send
+                    your details and we'll route it to the right team and respond quickly with next steps.</p>
+                <a href="contact-us.html" class="connect__btn--white">
+                    Contact us
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer">
         <div class="footer__watermark">2026</div>
         <div class="footer__container">
-            <!-- Top Section -->
+
             <div class="footer__top">
-                <!-- Brand Column -->
+
                 <div class="footer__col footer__col--brand">
                     <a href="#" class="footer__logo">
                         <img src="assets/logo_big.png" alt="Koscom Networks">
@@ -312,7 +336,7 @@
                         nationwide.
                     </p>
                     <div class="footer__socials">
-                        <!-- LinkedIn -->
+
                         <a href="#" class="footer__social-link" aria-label="LinkedIn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -323,14 +347,14 @@
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                         </a>
-                        <!-- Facebook -->
+
                         <a href="#" class="footer__social-link" aria-label="Facebook">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <!-- Instagram -->
+
                         <a href="#" class="footer__social-link" aria-label="Instagram">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -342,40 +366,40 @@
                     </div>
                 </div>
 
-                <!-- Links Columns Wrapper -->
+
                 <div class="footer__links-group">
-                    <!-- Quick Menu -->
+
                     <div class="footer__col">
                         <h4 class="footer__heading">Quick Menu</h4>
                         <ul class="footer__nav">
                             <li><a href="about-us.html" class="footer__link">About us</a></li>
-                            <li><a href="#services" class="footer__link">Services</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
                             <li><a href="projects.html" class="footer__link">Projects</a></li>
-                            <li><a href="#careers" class="footer__link">Careers</a></li>
+                            <li><a href="careers-work-with-us.html" class="footer__link">Careers</a></li>
                         </ul>
                     </div>
 
-                    <!-- Support -->
+
                     <div class="footer__col">
                         <h4 class="footer__heading">Support</h4>
                         <ul class="footer__nav">
-                            <li><a href="#contact" class="footer__link">Contact us</a></li>
-                            <li><a href="#faq" class="footer__link">FAQs</a></li>
+                            <li><a href="contact-us.html" class="footer__link">Contact us</a></li>
+                            <li><a href="index.html#faq" class="footer__link">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Divider -->
+
             <div class="footer__divider"></div>
 
-            <!-- Bottom Section -->
+
             <div class="footer__bottom">
                 <p class="footer__copyright">© Koscom Networks Inc. All Rights Reserved.</p>
                 <div class="footer__legal">
-                    <a href="#" class="footer__legal-link">Terms & Conditions</a>
+                    <a href="terms-and-conditions.html" class="footer__legal-link">Terms & Conditions</a>
                     <span class="footer__sep">|</span>
-                    <a href="#" class="footer__legal-link">Privacy Policy</a>
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
                 </div>
             </div>
         </div>

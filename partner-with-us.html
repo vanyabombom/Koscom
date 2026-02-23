@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner with Koscom Networks</title>
+    <meta name="description" content="Become a Koscom Networks Subcontractor — partner with us.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/icon.svg">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="/" class="header__logo">
+            <img src="assets/logo_big.png" alt="Koscom Networks">
+        </a>
+
+        <nav class="header__nav" id="nav">
+            <a href="about-us.html" class="header__nav-link">About us</a>
+            <a href="services.html" class="header__nav-link">Services</a>
+            <a href="projects.html" class="header__nav-link">Projects</a>
+
+            <div class="header__dropdown">
+                <button class="header__dropdown-toggle" style="color: var(--white);">
+                    Careers
+                    <span class="header__dropdown-arrow"></span>
+                </button>
+                <div class="header__dropdown-menu">
+                    <a href="careers-work-with-us.html">Work with Us</a>
+                    <a href="careers-subcontractors.html">Subcontractors</a>
+                </div>
+            </div>
+
+            <a href="contact-us.html" class="header__nav-link">Contact us</a>
+        </nav>
+
+        <button class="header__burger" id="burger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="pwHero">
+        <div class="pwHero__bg-circle pwHero__bg-circle--1"></div>
+        <div class="pwHero__bg-circle pwHero__bg-circle--2"></div>
+        <div class="pwHero__bg-circle pwHero__bg-circle--3"></div>
+
+        <div class="pwHero__content">
+            <h1 class="pwHero__title">Partner with Koscom Networks</h1>
+        </div>
+    </section>
+
+    <section class="apForm">
+        <div class="apForm__container">
+            <div class="apForm__inner">
+                <h2 class="apForm__heading" style="margin-bottom: 8px;">Become a Koscom Networks Subcontractor</h2>
+                <p class="pwForm__subtitle">Apply today — partner with Koscom Networks</p>
+
+                <form class="apForm__form" action="#" method="POST">
+
+                    <div class="apForm__section" style="margin-top: 40px;">
+                        <h3 class="apForm__section-title">Company Information</h3>
+
+                        <div class="apForm__grid">
+                            <div class="apForm__group apForm__group--full">
+                                <label>Company Name <span>(required)</span></label>
+                                <input type="text" name="company_name" required>
+                            </div>
+                            <div class="apForm__group apForm__group--full">
+                                <label>Address <span>(required)</span></label>
+                                <input type="text" name="address" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>City <span>(required)</span></label>
+                                <input type="text" name="city" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>State / Province / Region <span>(required)</span></label>
+                                <input type="text" name="state" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Zip / Postal Code <span>(required)</span></label>
+                                <input type="text" name="zip" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Country <span>(required)</span></label>
+                                <input type="text" name="country" required>
+                            </div>
+                        </div>
+
+                        <hr class="apForm__divider--dark">
+
+                        <div class="apForm__grid" style="margin-top: 32px;">
+                            <div class="apForm__group">
+                                <label>First Name <span>(required)</span></label>
+                                <input type="text" name="first_name" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Last Name <span>(required)</span></label>
+                                <input type="text" name="last_name" required>
+                            </div>
+                            <div class="apForm__group apForm__group--full">
+                                <label>Mobile/Office Phone <span>(required)</span></label>
+                                <input type="tel" name="phone" required>
+                            </div>
+                            <div class="apForm__group apForm__group--full">
+                                <label>Email</label>
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apForm__section" style="margin-top: 40px;">
+                        <div class="pwForm__checkbox-group">
+                            <label class="apForm__radio-main-label"
+                                style="font-weight: 600; font-size: 13.5px;">Preferred Area to Perform work
+                                <span>(required)</span></label>
+
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Northeast">
+                                Northeast (ME, NY, NJ, VT, NH, PA)</label>
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Southeast">
+                                Southeast (AL, LA, FL, MS, GA, NC,TN)</label>
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Midwestern">
+                                Midwestern (IL, IN, IA, KS, MI, MN, MO, NE, OH, SD, WI)</label>
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Western">
+                                Western (MT, WY, CO, NM, ID, UT, NV)</label>
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Southwest">
+                                Southwest (AZ, NM, OK, TX)</label>
+                            <label class="pwForm__checkbox-label"><input type="checkbox" name="area" value="Other"
+                                    id="pwAreaOther"> Other</label>
+
+                            <div class="apForm__other-input" id="pwAreaOtherWrapper"
+                                style="display: none; margin-top: 8px;">
+                                <label
+                                    style="font-size:13.5px; color:#111; font-weight:600; display:block; margin-bottom:6px;">Please
+                                    Specify</label>
+                                <input type="text" name="area_other"
+                                    style="width:100%; max-width:400px; border:1px solid #ddd; padding:10px; border-radius:4px; font-family:'Inter', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apForm__section" style="margin-top: 40px;">
+                        <div class="pwForm__checkbox-group">
+                            <label class="apForm__radio-main-label" style="font-weight: 600; font-size: 13.5px;">Type of
+                                Work & Number of Crews <span>(required)</span></label>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Construction"> Construction</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_construction" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Fiber Splicing"> Fiber Splicing</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_fiber" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Engineering"> Engineering</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_engineering" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Maintenance"> Maintenance</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_maintenance" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Installation"> Installation</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_installation" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Drop Bury"> Drop Bury</label>
+                                <div class="pwForm__crew-input">
+                                    <input type="number" name="crews_dropbury" class="pwForm__crew-num" min="0">
+                                    <span>Number of Crews</span>
+                                </div>
+                            </div>
+
+                            <div class="pwForm__crew-row" style="margin-bottom: 0;">
+                                <label class="pwForm__checkbox-label"><input type="checkbox" name="work_type"
+                                        value="Other" id="pwWorkOther"> Other</label>
+                            </div>
+
+                            <div class="apForm__other-input" id="pwWorkOtherWrapper"
+                                style="display: none; margin-top: 8px;">
+                                <label
+                                    style="font-size:13.5px; color:#111; font-weight:600; display:block; margin-bottom:6px;">Please
+                                    Specify</label>
+                                <input type="text" name="work_other"
+                                    style="width:100%; max-width:400px; border:1px solid #ddd; padding:10px; border-radius:4px; font-family:'Inter', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apForm__section" style="margin-top: 40px;">
+                        <label class="apForm__radio-main-label"
+                            style="font-weight: 600; font-size: 13.5px; margin-bottom: 8px;">Questions or
+                            Comments?</label>
+                        <textarea class="pwForm__textarea" name="comments" rows="6"></textarea>
+                    </div>
+
+                    <div class="apForm__submit-area" style="margin-top: 40px;">
+                        <label class="apForm__checkbox">
+                            <input type="checkbox" name="terms" required>
+                            <span class="apForm__checkbox-text">By clicking the button, I accept the terms of the
+                                agreement.</span>
+                        </label>
+
+                        <button type="submit" class="apForm__submit-btn" style="margin-top: 24px;">
+                            Submit Application
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__watermark">2026</div>
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__col footer__col--brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logo_big.png" alt="Koscom Networks">
+                    </a>
+                    <p class="footer__description">
+                        Koscom Networks designs, builds, and maintains fiber & coax networks—safely, on schedule,
+                        nationwide.
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links-group">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Menu</h4>
+                        <ul class="footer__nav">
+                            <li><a href="about-us.html" class="footer__link">About us</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="projects.html" class="footer__link">Projects</a></li>
+                            <li><a href="careers-work-with-us.html" class="footer__link">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Support</h4>
+                        <ul class="footer__nav">
+                            <li><a href="contact-us.html" class="footer__link">Contact us</a></li>
+                            <li><a href="index.html#faq" class="footer__link">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Koscom Networks Inc. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="terms-and-conditions.html" class="footer__legal-link">Terms & Conditions</a>
+                    <span class="footer__sep">|</span>
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const areaOtherCheckbox = document.getElementById('pwAreaOther');
+            const areaOtherWrapper = document.getElementById('pwAreaOtherWrapper');
+
+            if (areaOtherCheckbox && areaOtherWrapper) {
+                areaOtherCheckbox.addEventListener('change', (e) => {
+                    areaOtherWrapper.style.display = e.target.checked ? 'block' : 'none';
+                });
+            }
+
+            const workOtherCheckbox = document.getElementById('pwWorkOther');
+            const workOtherWrapper = document.getElementById('pwWorkOtherWrapper');
+
+            if (workOtherCheckbox && workOtherWrapper) {
+                workOtherCheckbox.addEventListener('change', (e) => {
+                    workOtherWrapper.style.display = e.target.checked ? 'block' : 'none';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

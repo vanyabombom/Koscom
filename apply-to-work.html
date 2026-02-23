@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to Work with Us</title>
+    <meta name="description"
+        content="Join Koscom Networks field teams — nationwide telecom infrastructure deployments.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/icon.svg">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="/" class="header__logo">
+            <img src="assets/logo_big.png" alt="Koscom Networks">
+        </a>
+
+        <nav class="header__nav" id="nav">
+            <a href="about-us.html" class="header__nav-link">About us</a>
+            <a href="services.html" class="header__nav-link">Services</a>
+            <a href="projects.html" class="header__nav-link">Projects</a>
+
+            <div class="header__dropdown">
+                <button class="header__dropdown-toggle" style="color: var(--white);">
+                    Careers
+                    <span class="header__dropdown-arrow"></span>
+                </button>
+                <div class="header__dropdown-menu">
+                    <a href="careers-work-with-us.html">Work with Us</a>
+                    <a href="careers-subcontractors.html">Subcontractors</a>
+                </div>
+            </div>
+
+            <a href="contact-us.html" class="header__nav-link">Contact us</a>
+        </nav>
+
+        <button class="header__burger" id="burger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="apHero">
+        <div class="tc-hero__circles">
+            <div class="tc-hero__circle tc-hero__circle--1"></div>
+            <div class="tc-hero__circle tc-hero__circle--2"></div>
+            <div class="tc-hero__circle tc-hero__circle--3"></div>
+        </div>
+        <div class="apHero__content">
+            <h1 class="apHero__title">
+                Apply to Work with Us
+            </h1>
+        </div>
+    </section>
+
+    <section class="apForm">
+        <div class="apForm__container">
+            <div class="apForm__inner">
+                <h2 class="apForm__heading">Apply To Work With Us</h2>
+
+                <form class="apForm__form" action="#" method="POST">
+                    <div class="apForm__section">
+                        <h3 class="apForm__section-title">Contact Information</h3>
+                        <div class="apForm__grid">
+                            <div class="apForm__group">
+                                <label>First Name <span>(required)</span></label>
+                                <input type="text" name="first_name" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Last Name <span>(required)</span></label>
+                                <input type="text" name="last_name" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Phone <span>(required)</span></label>
+                                <input type="tel" name="phone" required>
+                            </div>
+                            <div class="apForm__group">
+                                <label>Email <span>(required)</span></label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="apForm__group apForm__group--full">
+                                <label>State <span>(required)</span></label>
+                                <select name="state" required>
+                                    <option value="" disabled selected>Select a State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="CA">California</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="NY">New York</option>
+                                    <option value="TX">Texas</option>
+                                </select>
+                                <span class="apForm__hint">State where you're searching for cable technician job.</span>
+                            </div>
+                            <div class="apForm__group apForm__group--full">
+                                <label>City <span>(required)</span></label>
+                                <input type="text" name="city" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="apForm__divider">
+
+
+                    <div class="apForm__section">
+                        <h3 class="apForm__section-title">Skills, Documents & Vehicle</h3>
+
+                        <div class="apForm__radio-group">
+                            <label class="apForm__radio-main-label">Your english level <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="english" value="Native" required>
+                                Native</label>
+                            <label class="apForm__radio"><input type="radio" name="english" value="Fluent">
+                                Fluent</label>
+                            <label class="apForm__radio"><input type="radio" name="english" value="Intermediate">
+                                Intermediate</label>
+                            <label class="apForm__radio"><input type="radio" name="english" value="Basic"> Basic</label>
+                        </div>
+
+                        <hr class="apForm__divider--thin">
+
+                        <div class="apForm__radio-group">
+                            <label class="apForm__radio-main-label">Do you have experience as a cable technician?
+                                <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="exp" value="Yes" required>
+                                Yes</label>
+                            <label class="apForm__radio"><input type="radio" name="exp" value="No"> No</label>
+                        </div>
+
+                        <hr class="apForm__divider--thin">
+
+                        <div class="apForm__radio-group">
+                            <label class="apForm__radio-main-label">Do you have valid SSN number?
+                                <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="ssn" value="Yes" required>
+                                Yes</label>
+                            <label class="apForm__radio"><input type="radio" name="ssn" value="No"> No</label>
+                        </div>
+
+                        <hr class="apForm__divider--thin">
+
+                        <div class="apForm__radio-group">
+                            <label class="apForm__radio-main-label">Do you have valid US driver's license?
+                                <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="driver_license" value="Yes" required>
+                                Yes</label>
+                            <label class="apForm__radio"><input type="radio" name="driver_license" value="No">
+                                No</label>
+                        </div>
+
+                        <hr class="apForm__divider--thin">
+
+                        <div class="apForm__radio-group">
+                            <label class="apForm__radio-main-label">Do you have a truck that you are willing to use for
+                                this
+                                job? (WHITE van/minivan/pickup) <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="truck" value="Yes" required>
+                                Yes</label>
+                            <label class="apForm__radio"><input type="radio" name="truck" value="No"> No</label>
+                        </div>
+
+                        <hr class="apForm__divider--thin">
+                    </div>
+
+
+                    <div class="apForm__section">
+                        <h3 class="apForm__section-title">Few more details</h3>
+
+                        <div class="apForm__radio-group" id="nativeLanguageGroup">
+                            <label class="apForm__radio-main-label">Please select your native language
+                                <span>(required)</span></label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="Arabic" required>
+                                Arabic</label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="English">
+                                English</label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="Russian">
+                                Russian</label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="Spanish">
+                                Spanish</label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="Ukrainian">
+                                Ukrainian</label>
+                            <label class="apForm__radio"><input type="radio" name="native_lang" value="Other"
+                                    id="langOtherRadio"> Other</label>
+
+                            <div class="apForm__other-input" id="langOtherWrapper"
+                                style="display: none; margin-top: 16px;">
+                                <label
+                                    style="font-size:14px; color:#111; font-weight:600; display:block; margin-bottom:8px;">Please
+                                    Specify</label>
+                                <input type="text" name="native_lang_other" id="langOtherInput"
+                                    style="width:100%; max-width:400px; border:1px solid #ddd; padding:10px; border-radius:6px; font-family:'Inter', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apForm__submit-area" style="margin-top: 40px;">
+                        <label class="apForm__checkbox">
+                            <input type="checkbox" name="terms" required>
+                            <span class="apForm__checkbox-text">By clicking the button, I accept the terms of the
+                                agreement.</span>
+                        </label>
+
+                        <button type="submit" class="apForm__submit-btn">
+                            Submit Application
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__watermark">2026</div>
+        <div class="footer__container">
+
+            <div class="footer__top">
+
+                <div class="footer__col footer__col--brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logo_big.png" alt="Koscom Networks">
+                    </a>
+                    <p class="footer__description">
+                        Koscom Networks designs, builds, and maintains fiber & coax networks—safely, on schedule,
+                        nationwide.
+                    </p>
+                    <div class="footer__socials">
+
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="footer__links-group">
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Menu</h4>
+                        <ul class="footer__nav">
+                            <li><a href="about-us.html" class="footer__link">About us</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="projects.html" class="footer__link">Projects</a></li>
+                            <li><a href="careers-work-with-us.html" class="footer__link">Careers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Support</h4>
+                        <ul class="footer__nav">
+                            <li><a href="contact-us.html" class="footer__link">Contact us</a></li>
+                            <li><a href="index.html#faq" class="footer__link">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer__divider"></div>
+
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Koscom Networks Inc. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="terms-and-conditions.html" class="footer__legal-link">Terms & Conditions</a>
+                    <span class="footer__sep">|</span>
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

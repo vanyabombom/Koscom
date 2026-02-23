@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Koscom Networks</title>
+    <meta name="description" content="Contact Koscom Networks for your telecom infrastructure needs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/icon.svg">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="/" class="header__logo">
+            <img src="assets/logo_big.png" alt="Koscom Networks">
+        </a>
+
+        <nav class="header__nav" id="nav">
+            <a href="about-us.html" class="header__nav-link">About us</a>
+            <a href="services.html" class="header__nav-link">Services</a>
+            <a href="projects.html" class="header__nav-link">Projects</a>
+
+            <div class="header__dropdown">
+                <button class="header__dropdown-toggle" style="color: var(--white);">
+                    Careers
+                    <span class="header__dropdown-arrow"></span>
+                </button>
+                <div class="header__dropdown-menu">
+                    <a href="careers-work-with-us.html">Work with Us</a>
+                    <a href="careers-subcontractors.html">Subcontractors</a>
+                </div>
+            </div>
+
+            <a href="contact-us.html" class="header__nav-link" style="color: var(--white);">Contact us</a>
+        </nav>
+
+        <button class="header__burger" id="burger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+    <section class="hero cuHero" id="hero">
+        <div class="hero__video-wrap">
+            <img src="assets/contact-us-hero.jpg" alt="Contact Us">
+        </div>
+        <div class="hero__overlay" style="background: rgba(13, 27, 94, 0.4);"></div>
+
+        <div class="tc-hero__circles">
+            <div class="tc-hero__circle tc-hero__circle--1"></div>
+            <div class="tc-hero__circle tc-hero__circle--2"></div>
+            <div class="tc-hero__circle tc-hero__circle--3"></div>
+        </div>
+
+        <div class="hero__content">
+            <h1 class="hero__title" style="margin-top: 60px;">
+                Contact Us
+            </h1>
+        </div>
+    </section>
+
+
+    <div class="hero-bottom-curve">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path fill="#0d1b5e" d="M0,80 L0,0 L580,0 C640,0 660,75 720,75 C780,75 800,0 860,0 L1440,0 L1440,80 Z" />
+        </svg>
+        <a href="javascript:void(0)" class="hero__scroll">
+            <div class="hero__scroll-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path>
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <section class="cuContent">
+        <div class="cuContent__container">
+
+            <div class="cuContent__left">
+                <h2 class="cuContent__heading">Contacts</h2>
+
+                <div class="cuContent__info">
+                    <div class="cuContent__info-block">
+                        <h4 class="cuContent__info-label">Office Contact Info</h4>
+                        <p class="cuContent__info-text">222 S Prospect Ave, 3rd Floor<br>Park Ridge, IL 60068</p>
+                    </div>
+
+                    <div class="cuContent__info-block">
+                        <h4 class="cuContent__info-label">Phone number</h4>
+                        <p class="cuContent__info-text">+1 (917) 540-44-64</p>
+                    </div>
+
+                    <div class="cuContent__info-block">
+                        <h4 class="cuContent__info-label">E-mail address</h4>
+                        <p class="cuContent__info-text">info@koscomnetworks.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuContent__right">
+                <h2 class="cuContent__heading">We`re Ready to Help</h2>
+                <p class="cuContent__text">Apply today — partner with Koscom Cable.</p>
+
+                <form class="cuForm" action="#" method="POST">
+                    <div class="cuForm__row">
+                        <div class="cuForm__group">
+                            <label>First Name <span>(required)</span></label>
+                            <input type="text" name="first_name" required>
+                        </div>
+                        <div class="cuForm__group">
+                            <label>Last Name <span>(required)</span></label>
+                            <input type="text" name="last_name" required>
+                        </div>
+                    </div>
+
+                    <div class="cuForm__row">
+                        <div class="cuForm__group">
+                            <label>Phone</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="cuForm__group">
+                            <label>Email <span>(required)</span></label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="cuForm__group">
+                        <label>Questions or Comments?</label>
+                        <textarea name="comments"></textarea>
+                    </div>
+
+                    <label class="cuForm__checkbox">
+                        <input type="checkbox" name="terms" required>
+                        <span>By clicking the button, I accept the terms of the agreement.</span>
+                    </label>
+
+                    <button type="submit" class="cuForm__submit">
+                        Submit
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.6493851255686!2d-87.83577562353581!3d42.00779965728314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc9b82e712713%3A0xe36fa7bbeccf2e3d!2s222%20S%20Prospect%20Ave%203rd%20Floor%2C%20Park%20Ridge%2C%20IL%2060068%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1771764705180!5m2!1sru!2sua"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__watermark">2026</div>
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__col footer__col--brand">
+                    <a href="/" class="footer__logo">
+                        <img src="assets/logo_big.png" alt="Koscom Networks">
+                    </a>
+                    <p class="footer__description">
+                        Koscom Networks designs, builds, and maintains fiber & coax networks—safely, on schedule,
+                        nationwide.
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links-group">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Menu</h4>
+                        <ul class="footer__nav">
+                            <li><a href="about-us.html" class="footer__link">About us</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="projects.html" class="footer__link">Projects</a></li>
+                            <li><a href="careers-work-with-us.html" class="footer__link">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Support</h4>
+                        <ul class="footer__nav">
+                            <li><a href="contact-us.html" class="footer__link">Contact us</a></li>
+                            <li><a href="index.html#faq" class="footer__link">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Koscom Networks Inc. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="terms-and-conditions.html" class="footer__legal-link">Terms & Conditions</a>
+                    <span class="footer__sep">|</span>
+                    <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
